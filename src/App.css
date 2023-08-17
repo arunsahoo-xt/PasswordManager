@@ -1,5 +1,28 @@
 .App {
+  margin: 0;
   text-align: center;
+  background-color: rgba(255, 255, 255, 0.5);
+  width: fit-content;
+  padding: 2%;
+  margin-inline: auto;
+  margin-top: 5%;
+  backdrop-filter: blur(5px);
+  border-radius: 2%;
+}
+
+.MuiButton-contained {
+  font-size: 30px !important;
+}
+
+.MuiButton-outlined {
+  font-size: 1.1rem !important;
+  font-weight: bolder !important;
+}
+
+.MuiInputLabel-root {
+  /* font-size: 1.3rem !important; */
+  font-weight: bolder !important;
+  /* padding-bottom: 20px !important; */
 }
 
 .App-logo {
@@ -32,6 +55,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }

@@ -1,24 +1,33 @@
-import logo from './logo.svg';
+
 import './App.css';
+import Counter from './Counter';
+import RandomPassword from './RandomPassword';
+import { ThemeProvider, createTheme } from '@mui/material/styles';
+import { green, pink, purple } from '@mui/material/colors';
+
 
 function App() {
+
+
+  const theme = createTheme({
+
+    palette: {
+      primary: {
+        main: '#2a3eb1',
+      },
+      secondary: pink,
+    },
+
+  });
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ThemeProvider theme={theme}>
+      <div className="App">
+
+        {/* <Counter /> */}
+        <RandomPassword />
+      </div>
+    </ThemeProvider>
   );
 }
 
