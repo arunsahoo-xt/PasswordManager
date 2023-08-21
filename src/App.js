@@ -1,9 +1,9 @@
 
 import './App.css';
-import Counter from './Counter';
+
 import RandomPassword from './RandomPassword';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
-import { green, pink, purple } from '@mui/material/colors';
+import { pink } from '@mui/material/colors';
 
 
 function App() {
@@ -22,11 +22,12 @@ function App() {
 
   return (
     <ThemeProvider theme={theme}>
-      <div className="App">
 
-        {/* <Counter /> */}
+
+      <div className="App">
         <RandomPassword />
       </div>
+
     </ThemeProvider>
   );
 }
